@@ -178,16 +178,6 @@ header {
     object-fit: cover;
   }
 
-  h1 {
-    position: absolute;
-    bottom: 2rem;
-    right: 3rem;
-    font-size: 8rem;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    color: rgba(255, 255, 255, 0.87);
-  }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -200,6 +190,17 @@ header {
       rgba(0, 0, 0, 0.4) 100%
     );
   }
+}
+
+h1 {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  font-size: 8rem;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.87);
+  width: max-content;
 }
 
 .intro .content {
@@ -298,10 +299,19 @@ footer {
     flex-direction: column;
   }
 
+  h1 {
+    font-size: 4rem;
+    width: min-content;
+  }
+
   h2,
   h3 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 2rem;
+  }
+
+  .intro-img img {
+    height: 40rem;
   }
 }
