@@ -40,7 +40,7 @@ body {
 }
 
 #app {
-  width: 100%;
+  width: calc(100vw - 4rem);
   max-width: 1024px;
   margin: 0 auto;
   padding: 2rem;
@@ -76,20 +76,20 @@ ul {
     font-weight: 600;
     margin-bottom: 2rem;
   }
+}
 
-  &.form-footer {
-    display: flex;
-    gap: 5rem;
-    align-items: center;
-    padding: 5rem 5rem;
+.form-footer {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding: 5rem 5rem;
 
-    p {
-      margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 
-    & > * {
-      flex: 1 1 0;
-    }
+  & > * {
+    flex: 1 1 0;
   }
 }
 
@@ -271,5 +271,37 @@ footer {
   p {
     color: #222222;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-left,
+  .img-right {
+    float: none;
+    margin: 1rem 0;
+    width: 100%;
+  }
+
+  .figure-content {
+    flex-direction: column;
+  }
+
+  .form-footer {
+    flex-direction: column;
+
+    form {
+      width: 100%;
+    }
+  }
+
+  .intro .content {
+    flex-direction: column;
+  }
+
+  h2,
+  h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
   }
 }
